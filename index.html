@@ -7,45 +7,179 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
             background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #fff;
+            color: #e0e0e0;
+            line-height: 1.8;
         }
-        .container {
+        header {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 1rem 2rem;
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
             background: linear-gradient(90deg, #00d2ff, #7b2ff7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        p {
-            font-size: 1.25rem;
-            color: #ccc;
+        header p {
+            font-size: 1.1rem;
+            color: #aaa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 3rem;
+        }
+        .photo-section {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .photo-section img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #7b2ff7;
+        }
+        section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 2rem;
             margin-bottom: 2rem;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            color: #00d2ff;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
+        section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.5rem;
+        }
+        th, td {
+            padding: 0.6rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th {
+            color: #a78bfa;
+            font-weight: 600;
+        }
+        .research h3 {
+            color: #a78bfa;
+            margin: 1.2rem 0 0.5rem;
+            font-size: 1.05rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.85rem;
         }
         .badge {
             display: inline-block;
-            padding: 0.5rem 1.5rem;
+            padding: 0.4rem 1.2rem;
             border: 1px solid #7b2ff7;
             border-radius: 999px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #a78bfa;
+            margin-top: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Felix 實驗的 AI 做網站</h1>
         <p>用 AI 打造網站的實驗旅程</p>
-        <span class="badge">🚀 Powered by AI</span>
+    </header>
+
+    <div class="container">
+
+        <!-- 照片 -->
+        <div class="photo-section">
+            <img src="https://github.com/user-attachments/assets/472e6121-4bfe-42ff-843e-823e58d6cbc6" alt="Felix 照片">
+        </div>
+
+        <!-- 自我介紹 -->
+        <section>
+            <h2>自我介紹</h2>
+            <p>我出生於花蓮的一個書香家庭，父母皆從事教職工作，父親在大學任教，母親則在高職擔任教師。在這樣的家庭環境下，從小就成長在書本之中，也培養出對知識的渴望與追求。從小，我就展現出強烈的邏輯分析能力，特別喜歡下棋，透過棋局的推演培養戰略思維與耐心，這也為我日後在資訊領域的發展奠定了良好的基礎。</p>
+            <p>課餘時間，我熱衷於閱讀各類書籍，除了休閒書籍外，也會閱讀一些與生物、科技或是哲學相關的著作，這不僅拓展了我的視野，也培養了我獨立思考與分析問題的能力。另外，我也積極參與羽毛球運動，既能鍛鍊身體，也能培養人與人之間的互動，這項興趣至今持續保持著。十歲那年，隨著家人搬遷至台中，開始了人生的新篇章。</p>
+            <p>升上大學後，我進入中正大學數學系就讀。在就讀期間，我深刻體認到個人志趣所在，於是在就讀兩年後，我做出了人生的重要抉擇——重新考試，最終考取文化大學資訊管理學系。這個決定雖然不易，但讓我找到了真正的興趣所在。我的邏輯分析能力在資訊管理的學習過程中得到充分發揮，特別是在程式設計與系統分析等課程中表現優異。</p>
+            <p>在文化大學求學期間，我積極參與張老師基金會的訓練課程，雖然因期末考試時間衝突只完成到第二階段，但這段經驗讓我對助人工作產生濃厚的興趣，也為日後的職涯發展埋下重要的種子。大學畢業後，我進入馬偕醫院擔任兼任助理，負責網頁編輯與行政業務，這份工作讓我初步接觸到醫療體系的運作。為了進一步提升專業能力，我選擇就讀國立台北護理健康大學資訊管理研究所，專攻醫療資訊領域，為自己的職涯發展打下更紮實的基礎。</p>
+            <p>取得碩士學位後，我進入歷新健康科技股份有限公司工作，參與衛生署及台大醫院的多項計畫案，負責軟體系統開發工作。在這個階段，我的邏輯思維和分析能力得到充分發揮，成功處理許多複雜的系統整合問題。這段經歷讓我累積了寶貴的實務經驗，也深入了解到資訊科技在醫療照護領域的重要性。後來因家人健康因素，我選擇回到台中工作，很幸運地加入了家扶基金會資訊室的團隊。在這裡，我負責系統開發、分析與維護等工作，協助開發基金會內部的各項服務系統。這份工作不僅讓我發揮專業所長，更重要的是能夠運用科技來協助社會服務工作，讓我感受到工作的價值與意義。</p>
+            <p>2021年，我決定報考暨南國際大學社會工作研究所，期望能夠將過去在資訊領域的專業知識，與社會工作的專業結合，為社會福利工作帶來更多創新的可能。回顧這段求學與工作歷程，每一個選擇都讓我更加清楚自己的方向。我期望能夠運用紮實的邏輯分析能力，結合資訊專業，為社會福利工作注入更多創新的元素，為需要幫助的人提供更好的服務。</p>
+        </section>
+
+        <!-- 學歷 -->
+        <section>
+            <h2>學歷</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>學歷</th>
+                        <th>學校</th>
+                        <th>科系</th>
+                        <th>畢業年份</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>碩士</td>
+                        <td>台北護理健康大學</td>
+                        <td>資管系</td>
+                        <td>2010 年 6 月</td>
+                    </tr>
+                    <tr>
+                        <td>大學</td>
+                        <td>文化大學</td>
+                        <td>資管系</td>
+                        <td>2007 年 6 月</td>
+                    </tr>
+                    <tr>
+                        <td>高中職</td>
+                        <td>宜寧高中</td>
+                        <td>高中部</td>
+                        <td>2001 年 6 月</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3/14 社工專協報告簡介 -->
+        <section class="research">
+            <h2>3/14 社工專協報告簡介</h2>
+            <p><strong>人工智慧工具(AI)於社會工作行政流程的整合運用研究初探——以家扶基金會為例</strong></p>
+
+            <h3>研究動機</h3>
+            <p>在社會工作實務現場，文書與資料整理往往佔用社工大量時間，影響了社工在專業服務上的投入。國際上已有許多運用人工智慧工具(AI)提升社會服務效率的案例，如自殺風險評估、心理健康支持和行政自動化，然AI的應用亦可能危及資料隱私、演算法偏誤，甚至影響服務對象對專業的信任等風險。家扶基金會為了回應實務現場的需求和提升社工投入專業服務時間，以開案評估紀錄整理為切入點，進行AI工具協助紀錄撰寫的測試。期待在既有專業知能架構下，安全且有效地導入AI，透過降低行政負擔，社工能將更多時間投入專業服務，進而提升服務品質和擴大社會影響力。</p>
+
+            <h3>研究方式</h3>
+            <p>本研究有三步驟：工具比較、實務測試、建立操作流程(SOP)，並以開案評估紀錄整理為範例情境，期能建構出符合實務現場的操作流程。首先針對ChatGPT、DeepSeek、NotebookLM、Grok 等工具，在表格解析力、多檔案整合、摘要能力、準確性，以及資安風險進行比較；第二步則將開案紀錄去識別化，移除任何可能推測的個案資訊後，以本會開案評估之家庭結構、經濟狀況、兒童需求、家長功能、家庭資源、居住環境等六大面向，加入指令進行測試，並逐一比對內容是否完整、虛構、敘述貼合社工語境等；最終依據測試結果，建立社工的使用步驟、倫理原則、資料保護規範，以及查核機制的操作流程。</p>
+
+            <h3>研究成果</h3>
+            <p>研究發現AI在社工行政與紀錄整理上具明顯效益，能迅速整理評估重點，語意具結構性，有助於提升評估的一致性與周延性，並產出具脈絡的文字草稿，降低社工在資料彙整與撰寫紀錄上的時間投入。然測試過程中仍可觀察到偏誤、文化誤解與模型幻覺，因此強調需搭配人工查核與查證機制。另，本研究詳細整理出AI工具於社工領域的核心倫理原則：資料隱私保護、資訊透明、偏誤辨識、模型幻覺管理、以及AI不得取代評估決策。</p>
+
+            <h3>研究貢獻</h3>
+            <p>本研究提出符合倫理原則的AI操作流程(SOP)，建構一套能安全導入AI的工作流程，包含資料處理、操作步驟、查核方式與警示機制，增強AI與社工專業的互補性，且能提供測試模式供各社福機構參考，以評估AI是否適用其需求。</p>
+
+            <p><strong>關鍵詞：</strong>AI工具、資安風險、倫理原則</p>
+        </section>
+
     </div>
+
+    <footer>
+        <span class="badge">Powered by AI</span>
+        <p style="margin-top: 1rem;">&copy; 2026 Felix</p>
+    </footer>
 </body>
 </html>
